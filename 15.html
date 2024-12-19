@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Invitación a los 15 Años</title>
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Playfair+Display:wght@400;500&family=Raleway:wght@300;400&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Raleway', sans-serif;
+            background: url('fondo.jpg') no-repeat center center fixed;
+            background-size: cover;
+            color: #fff;
+            overflow: hidden;
+        }
+
+        .container {
+            text-align: center;
+            padding: 20px;
+            position: relative;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background: rgba(0, 0, 0, 0.5); /* Fondo semitransparente */
+        }
+
+        .container h1 {
+            font-family: 'Great Vibes', cursive;
+            font-size: 2.5rem;
+            color: #ffcc00;
+            text-shadow: 2px 2px 4px #000;
+            margin-bottom: 20px;
+        }
+
+        .details {
+            margin: 20px 0;
+            font-size: 1rem;
+            font-family: 'Playfair Display', serif;
+            background: rgba(255, 255, 255, 0.8);
+            padding: 15px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            color: #444;
+            width: 90%; /* Ajuste para pantallas pequeñas */
+            max-width: 400px;
+        }
+
+        .details p {
+            margin: 10px 0;
+        }
+
+        .animated {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+        }
+
+        .animated span {
+            position: absolute;
+            display: block;
+            width: 15px;
+            height: 15px;
+            background: rgba(255, 255, 255, 0.5);
+            border-radius: 50%;
+            animation: move 8s infinite ease-in-out;
+        }
+
+        @keyframes move {
+            0% {
+                transform: translateY(0) translateX(0);
+            }
+            100% {
+                transform: translateY(calc(100vh)) translateX(calc(100vw - 50px));
+            }
+        }
+
+        @media (max-width: 768px) {
+            .container h1 {
+                font-size: 2rem;
+            }
+            .details {
+                font-size: 0.9rem;
+                padding: 10px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .container h1 {
+                font-size: 1.8rem;
+            }
+            .details {
+                font-size: 0.8rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Título principal -->
+        <h1>✨ Te invito a mis 15 Años ✨</h1>
+
+        <!-- Detalles de la invitación -->
+        <div class="details">
+            <p>Con gran emoción quiero compartir este día tan especial contigo.</p>
+            <p>🗓 <b>Fecha:</b> 4 de enero de 2025</p>
+            <p>⏰ <b>Hora de la Eucaristía:</b> 6:00 p.m.</p>
+            <p>📍 <b>Lugar:</b> Parroquia Jesús Eucaristía</p>
+            <p>🎉 <b>Recepción:</b></p>
+            <p>⏰ <b>Hora:</b> 7:40 p.m.</p>
+            <p>📍 <b>Salón de eventos Arte y Sazón, vía a Carupa</b></p>
+            <p><b>Código de Vestimenta:</b> Se reserva el color azul.</p>
+        </div>
+    </div>
+
+    <!-- Animación decorativa -->
+    <div class="animated">
+        <span style="top: 20%; left: 10%; animation-delay: 0s;"></span>
+        <span style="top: 50%; left: 30%; animation-delay: 2s;"></span>
+        <span style="top: 70%; left: 70%; animation-delay: 4s;"></span>
+        <span style="top: 10%; left: 90%; animation-delay: 1s;"></span>
+    </div>
+</body>
+</html>
